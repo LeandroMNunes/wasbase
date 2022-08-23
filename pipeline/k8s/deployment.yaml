@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: defaultapplication
-  name: defaultapplication
+    app: plantsbywebsphere
+  name: plantsbywebsphere
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: defaultapplication
+      app: plantsbywebsphere
   template:
     metadata:
       labels:
-        app: defaultapplication
+        app: plantsbywebsphere
     spec:
       containers:
         - image: image-registry.openshift-image-registry.svc:5000/myproject/defaultapplication:latest
           imagePullPolicy: Always
-          name: defaultapplication
+          name: plantsbywebsphere
           ports:
             - containerPort: 9080
               protocol: TCP

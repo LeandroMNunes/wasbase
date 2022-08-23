@@ -78,11 +78,11 @@ print "Installing application ..."
 node = getName(getNodeId(""))
 server = getName(getServerId(""))
 
-parms = "-appname defaultapplication"
+parms = "-appname plantsbywebsphere"
 parms += " -node " + node + " -server " + server
 parms += " -nouseMetaDataFromBinary"
 parms += " -MapWebModToVH [[.* .* default_host]]"
-app = AdminApp.install("/work/config/defaultapplication.ear", [parms])
+app = AdminApp.install("/work/config/pbw-ear.ear", [parms])
 
 AdminConfig.save()
 
