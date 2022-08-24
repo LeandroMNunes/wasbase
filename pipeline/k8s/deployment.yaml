@@ -15,7 +15,7 @@ spec:
         app: plantsbywebsphere
     spec:
       containers:
-        - image: image-registry.openshift-image-registry.svc:5000/myproject/defaultapplication:latest
+        - image: image-registry.openshift-image-registry.svc:5000/was-base/plantsbywebsphere:latest
           imagePullPolicy: Always
           name: plantsbywebsphere
           ports:
