@@ -6,7 +6,7 @@ metadata:
   name: plantsbywebsphere
 spec:
   path:
-    /
+    /PlantsByWebSphere
   port:
     targetPort: http
   to:
