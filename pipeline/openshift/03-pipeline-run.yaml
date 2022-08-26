@@ -17,4 +17,4 @@ spec:
   - name: repo-dockerfile
     value: Dockerfile
   - name: image-url
-    value: image-registry.openshift-image-registry.svc:5000/was-base/plantsbywebsphere:latest
+    value: default-route-openshift-image-registry.apps.ocpmagna.magnasistemas.com.br:5000/was-base/plantsbywebsphere:latest
